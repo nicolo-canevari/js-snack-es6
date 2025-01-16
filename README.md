@@ -28,3 +28,9 @@ Snack-2:
 -Al suo interno, per ogni squadra, aggiungo queste proprietà: nome, punti fatti, falli subiti (Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0).
 -Con Math.floor(Math.random) genero randomicamente un numero per le proprietà: “punti” fatti e “falli subiti” (precedentemente settate a 0 nell'array).
 -Creo infine un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto.
+
+
+Snack-3:
+-Scrivo una funzione che accetti 3 argomenti: arr, a, b.
+-La funzione dovrà restituire un nuovo array contenente solo gli elementi dell'array originale che si trovano nelle posizioni comprese tra a e b
+-Stampo in console
