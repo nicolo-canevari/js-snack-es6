@@ -11,3 +11,13 @@ Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subit
 
 Snack-3 (Bonus):
 Scrivere una funzione che accetti tre argomenti, un array e due numeri (a più piccolo di b). La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri.
+
+
+LOGICA=
+Snack-1:
+
+-Creo un array di oggetti (bici)
+-All'interno dell' array vado a descrivere le seguenti proprietà: Nome, Peso.
+<!-- le bici andranno messe in orine sparso in base alle loro prorprietà per testare il corretto funzionamento del codice -->
+-Uso un ciclo for per individuare la bici più leggera dell'array.
+-Stampo a schermo la bici che pesa di meno rispetto alle altre.
