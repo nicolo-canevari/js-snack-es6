@@ -26,3 +26,22 @@ for (let i = 1; i < bici.length; i++) {
 
 // Stampiamo a schermo la bici con il peso minore
 console.log(`La bici con il peso minore è: ${biciLeggera.nome} con un peso di ${biciLeggera.peso} kg.`);
+
+// Stampiamo il risultato nel div con id "result"
+document.getElementById('result').innerHTML = `La bici con il peso minore è: <strong>${biciLeggera.nome}</strong> con un peso di <strong>${biciLeggera.peso} kg</strong>.`;
+
+// Riempio la tabella dinamicamente con le informazioni delle bici, aggiungendo una riga per ogni bici nell'array
+let tableBody = document.getElementById('biciTable').getElementsByTagName('tbody')[0];
+bici.forEach(function(bici) {
+
+    // inserisco una nuova riga all'interno di tbody
+    // row è la variabile che memorizza la nuova riga inserita nella tabella
+    let row = tableBody.insertRow();
+    // row.insertCell(0): Dopo aver creato una nuova riga (row), questa riga crea una nuova cella (<td>) all'interno della riga (cell1/cell2 è la variabile che memorizza questa cella)
+    let cell1 = row.insertCell(0);
+    let cell2 = row.insertCell(1);
+    // cell1.textContent assegna il contenuto (testo) della prima cella (cell1) al valore della proprietà nome dell'oggetto bici
+    cell1.textContent = bici.nome;
+    cell2.textContent = bici.peso + " kg";
+
+});
