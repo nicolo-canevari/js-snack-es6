@@ -21,3 +21,10 @@ Snack-1:
 <!-- le bici andranno messe in orine sparso in base alle loro prorprietà per testare il corretto funzionamento del codice -->
 -Uso un ciclo for per individuare la bici più leggera dell'array.
 -Stampo a schermo la bici che pesa di meno rispetto alle altre.
+
+
+Snack-2:
+-Creo un array di oggetti (squadre)
+-Al suo interno, per ogni squadra, aggiungo queste proprietà: nome, punti fatti, falli subiti (Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0).
+-Con Math.floor(Math.random) genero randomicamente un numero per le proprietà: “punti” fatti e “falli subiti” (precedentemente settate a 0 nell'array).
+-Creo infine un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto.
