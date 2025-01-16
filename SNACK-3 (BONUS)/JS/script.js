@@ -28,3 +28,29 @@ function estraiIntervallo(arr, a, b) {
     }
 
 }
+
+ // Funzione per gestire il click sul pulsante
+//  Quando l'utente clicca sul pulsante, verrà eseguita la funzione che segue
+ document.getElementById('estraiBtn').addEventListener('click', function() {
+
+    const risultato = estraiIntervallo(array, a, b);  // Chiamata alla funzione
+
+    // Seleziona l'elemento con l'ID result, che è il contenitore dove andrà a inserire i risultati estratti
+    const resultContainer = document.getElementById('result');
+    // Ogni volta che si clicca il pulsante, prima di aggiungere nuovi dati, cancella i risultati precedenti per evitare che i nuovi dati si accumulino
+    resultContainer.innerHTML = "";
+
+    // Aggiungiamo ogni elemento del risultato come un div
+    risultato.forEach(item => {
+
+        const div = document.createElement('div');
+        // Aggiungiamo una classe CSS
+        div.classList.add('result-item');
+        // Impostiamo il contenuto di testo del div
+        div.textContent = item;
+        // Aggiunge il div al DOM rendendolo visibile in pagina dall'utente
+        resultContainer.appendChild(div);
+
+    });
+
+});

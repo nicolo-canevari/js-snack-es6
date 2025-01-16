@@ -1,0 +1,66 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* REGOLE GENERALI */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    color: #555;
+    text-align: center;
+}
+
+#result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* classe applicata a ciascun elemento estratto per dargli uno stile visivo */
+.result-item {
+    background-color: #eaeaea;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+    color: #333;
+}
+
+#estraiBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#estraiBtn:hover {
+    background-color: #45a049;
+}
