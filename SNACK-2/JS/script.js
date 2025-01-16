@@ -31,3 +31,34 @@ const squadreFalliSubiti = squadre.map(squadra => ({
 // Stampo entrambi gli array in console usando console.table
 console.table(squadre);
 console.table(squadreFalliSubiti);
+
+// Funzione per popolare la tabella con tutte le squadre
+const tableSquadre = document.getElementById('tableSquadre').getElementsByTagName('tbody')[0];
+squadre.forEach(squadra => {
+
+    // inserisco una nuova riga all'interno di tbody
+    // row è la variabile che memorizza la nuova riga inserita nella tabella
+    let row = tableSquadre.insertRow();
+    // row.insertCell(0): Dopo aver creato una nuova riga (row), questa riga crea una nuova cella (<td>) all'interno della riga (cell1/cell2/cell3 è la variabile che memorizza questa cella)
+    let cell1 = row.insertCell(0);
+    let cell2 = row.insertCell(1);
+    let cell3 = row.insertCell(2);
+    // cell1.textContent assegna il contenuto (testo) della prima cella (cell1) al valore della proprietà nome dell'oggetto squadra.nome
+    cell1.textContent = squadra.nome;
+    cell2.textContent = squadra.punti;
+    cell3.textContent = squadra.falliSubiti;
+
+});
+
+// Funzione per popolare la tabella con i nomi e i falli subiti
+const tableFalliSubiti = document.getElementById('tableFalliSubiti').getElementsByTagName('tbody')[0];
+squadreFalliSubiti.forEach(squadra => {
+
+    // Valgono le stesse regole viste per tableSquare
+    let row = tableFalliSubiti.insertRow();
+    let cell1 = row.insertCell(0);
+    let cell2 = row.insertCell(1);
+    cell1.textContent = squadra.nome;
+    cell2.textContent = squadra.falliSubiti;
+
+});
