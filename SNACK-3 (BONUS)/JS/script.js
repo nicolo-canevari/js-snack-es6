@@ -29,7 +29,7 @@ function estraiIntervallo(arr, a, b) {
 
 }
 
- // Funzione per gestire il click sul pulsante
+// Funzione per gestire il click sul pulsante
 //  Quando l'utente clicca sul pulsante, verrà eseguita la funzione che segue
  document.getElementById('estraiBtn').addEventListener('click', function() {
 
